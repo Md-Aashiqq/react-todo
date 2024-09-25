@@ -1,0 +1,66 @@
+
+@import './variables.scss';
+
+.home__container{
+    width: 100%;
+    height: 100vh;
+    background-color: $grey;
+
+    .home_header{
+        width: 100%;
+        height: 60px;
+        background-color: $base-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-size: 20px;
+    }
+
+    .todo__body{
+        width: 100%;
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+
+        .todo_add{
+            display: flex;
+            gap: 8px;
+            input{
+                width: 300px;
+                height: 40px;
+                border-radius: 4px;
+                border: $base-color 3px solid;
+                padding: 10px;
+            }
+        }
+
+        .todo_list{
+            width: 500px;
+            background-color: $ancent-color;
+            display: flex;
+            align-items: center;
+             gap: 20px;
+            padding: 20px;
+            justify-content: space-between;
+            border-radius: 8px;
+            .todo_text{
+                font-size: 20px;
+            }
+
+            .todo_date{
+                font-size: 15px;
+            }
+
+            
+        }
+
+    }
+
+
+
+}
