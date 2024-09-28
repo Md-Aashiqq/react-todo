@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 
-function Button({name}) {
+function Button({name,func}) {
   return (
-    <button>{name}</button>
+    <button onClick={() => func()}>{name}</button>
   )
 }
 
